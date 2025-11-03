@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8; /* Cor de fundo leve */
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #3c3f41; /* Cor de fundo do cabeçalho */
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Espaço entre logo e botões */
+  align-items: center; /* Alinhamento vertical */
+}
+
+/* Estilo do logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px; /* Tamanho do logo */
+  height: auto;
+  margin-right: 10px; /* Espaçamento entre imagem e texto */
+}
+
+/* Estilo dos botões de contato */
+.contato-buttons {
+  display: flex;
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+.toggle-btn {
+  background-color: #5cb85c; /* Cor de fundo dos botões */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer;
+  position: relative; /* Para o posicionamento do tooltip */
+  display: flex;
+  align-items: center; /* Alinhamento vertical dos ícones e texto */
+}
+
+.toggle-btn:hover {
+  background-color: #4cae4c; /* Cor ao passar o mouse */
+}
+
+/* Estilo da informação (tooltip) */
+.info {
+  display: none; /* Inicialmente escondido */
+  position: absolute;
+  background-color: #333; /* Cor de fundo do tooltip */
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  top: 100%; /* Abaixo do botão */
+  left: 50%; /* Centralizado */
+  transform: translateX(-50%); /* Centraliza o tooltip */
+  white-space: nowrap; /* Impede quebra de linha */
+  z-index: 100; /* Acima de outros elementos */
+}
+
+.toggle-btn:hover .info {
+  display: block; /* Exibe ao passar o mouse */
+}
+
+/* Estilo das seções do main */
+main {
+  padding: 20px;
+  display: flex;
+}
+
+.link-section {
+  margin: 15px 0; /* Espaçamento entre seções */
+}
+
+.link-btn {
+  display: block;
+  background-color: #007bff; /* Cor de fundo dos links */
+  color: white;
+  padding: 10px;
+  text-align: center; /* Centraliza o texto */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove sublinhado */
+}
+
+.link-btn:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #3c3f41; /* Cor de fundo do rodapé */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative; /* Para o posicionamento em caso de elementos fixos */
+}
