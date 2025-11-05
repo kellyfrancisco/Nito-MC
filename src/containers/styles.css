@@ -112,6 +112,8 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  background-color: #003366;
+  flex-direction: row;
 }
 
 .link-section {
@@ -157,30 +159,38 @@ footer {
 
 .quem-somos {
   background-image: url('public/img/foto-loja.jpg');
-}
+  background-size: cover;
+ }
 
 .missao {
   background-image: url('public/img/images.jpeg');
+  background-size: cover;
+    
 }
 
 .catalogo {
   background-image: url('public/img/mat-const.jpeg');
+  background-size: cover;
 }
 
 .casas-alugar {
   background-image: url('public/img/aluguel.jpeg');
+  background-size: cover;
 }
 
 .casas-venda {
   background-image: url('public/img/venda.jpeg');
+  background-size: cover;
 }
 
 .orcamento {
   background-image: url('public/img/orçamento.png');
+  background-size: cover;
 }
 
 .calculo-material {
   background-image: url('public/img/material.orc.jpeg');
+  background-size: cover;
 }
 
 .catalogo-content {
