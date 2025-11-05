@@ -53,7 +53,7 @@ header {
   display: none; /* Inicialmente escondido */
   position: absolute;
   background-color: #333; /* Cor de fundo do tooltip */
-  color: white;
+  color: rgb(17, 70, 139);
   padding: 5px;
   border-radius: 3px;
   top: 100%; /* Abaixo do botão */
