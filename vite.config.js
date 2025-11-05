@@ -14,8 +14,17 @@ export default defineConfig({
         main: './index.html',
       },
       output: {
-        assetFileNames: 'assets/[name].[ext]'
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name.endsWith('.css')) {
+            return 'css/[name].[hash].[ext]'
+          }
+          return 'assets/[name].[hash].[ext]'
+        }
       }
     }
+  },
+  css: {
+    modules: false,
+    extract: true
   }
 })
