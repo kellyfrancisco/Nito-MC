@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./componentes/Home/home.jsx";
 import Catalogo from "./componentes/catalogo/catalogo.jsx";
-import './styles/styles.css';
+import './containers/styles.css';
 
 const App = () => {
   return (
