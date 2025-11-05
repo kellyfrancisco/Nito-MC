@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./componentes/Home/home.jsx"; // Corrigido para refletir a estrutura do seu projeto
-import Catalogo from "./componentes/catalogo/catalogo.jsx"; // Corrigido para refletir a estrutura do seu projeto
+import Home from "./componentes/Home/home.jsx";
+import Catalogo from "./componentes/catalogo/catalogo.jsx";
+import './styles/styles.css';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/Nito-MC">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catalogo" element={<Catalogo />} />
