@@ -16,15 +16,25 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'
           
       - name: Install Dependencies
-        run: npm install
-        
+        run: |
+          npm install
+          
+      - name: Ensure CSS Directory
+        run: |
+          mkdir -p src/containers
+          cp src/containers/styles.css src/containers/ || true
+          
       - name: Build
-        run: npm run build
-        
+        run: |
+          npm run build
+          cp src/containers/styles.css dist/
+          
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          force_orphan: true
