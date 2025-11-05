@@ -114,6 +114,7 @@ main {
   gap: 20px;
   background-color: #003366;
   flex-direction: row;
+  width: 100%;
 }
 
 .link-section {
@@ -165,7 +166,11 @@ footer {
 .missao {
   background-image: url('public/img/images.jpeg');
   background-size: cover;
-    
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
 }
 
 .catalogo {
