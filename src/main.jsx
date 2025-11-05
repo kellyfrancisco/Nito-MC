@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client"; 
-import App from "./App.jsx"; // Correto se App.jsx estiver no diretório /src
-import "./containers/styles.css"; // CSS global, correto se styles.css estiver na pasta /containers
+import App from "./App.jsx";
+import "./containers/styles.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
